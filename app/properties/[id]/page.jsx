@@ -1,4 +1,8 @@
-const PropertyPage = () => {
-  return <div>Dynamic PropertyPage</div>;
+const SinglePropertyPage = ({ params, searchParams }) => {
+  console.log("hello from server");
+
+  return <div>Dynamic PropertyPage: {params.id}</div>;
 };
-export default PropertyPage;
+export default SinglePropertyPage;
+
+// searchParams.name
