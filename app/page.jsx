@@ -1,4 +1,12 @@
+import Hero from "@/components/Hero";
+import InfoBoxesLayout from "@/components/InfoBoxesLayout";
+
 const HomePage = () => {
-  return <h1>Welcome to Homepage</h1>;
+  return (
+    <>
+      <Hero />
+      <InfoBoxesLayout />
+    </>
+  );
 };
 export default HomePage;
