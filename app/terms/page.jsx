@@ -1,6 +1,6 @@
 const TermsPage = () => {
   return (
-    <section className="px-6 py-4">
+    <section className="container-xl lg:container m-auto px-4 py-6">
       <h1 className="font-bold text-xl mb-4">Terms of Service</h1>
       <p>
         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum,
