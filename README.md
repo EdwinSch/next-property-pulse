@@ -8,9 +8,10 @@ App description coming
 
 #### 🛠️ Build with
 
-- Next (14)
+- Next.JS (14)
 - Tailwind
-- React Icons (NPM)
+- NextAuth
+- React Icons
 
 #### 💻 Run this project
 
