@@ -12,6 +12,7 @@ App description coming
 - Tailwind
 - NextAuth
 - React Icons
+- React Spinners
 
 #### 💻 Run this project
 
