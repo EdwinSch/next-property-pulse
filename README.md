@@ -11,6 +11,7 @@ App description coming
 - Next.JS (14)
 - Tailwind
 - NextAuth
+- Cloudinary
 - React Icons
 - React Spinners
 
