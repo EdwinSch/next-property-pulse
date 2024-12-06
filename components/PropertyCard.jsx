@@ -71,7 +71,7 @@ const PropertyCard = ({ property }) => {
             <FaMapMarker className="text-lg text-orange-700 md:hidden lg:inline" />
             <span className="text-orange-700">
               {" "}
-              {property.location.city} {property.location.state}{" "}
+              {property.location.city}, {property.location.state}{" "}
             </span>
           </div>
           <Link
