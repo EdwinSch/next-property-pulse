@@ -3,11 +3,26 @@
 import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
+import deleteProperty from "@/app/actions/DeleteProperty";
 
 const ProfileProperties = ({ properties }) => {
   const [propertiesList, setPropertiesList] = useState(properties);
-
   //   console.log(propertiesList);
+
+  const handleDeleteProperty = async (propertyId) => {
+    const confirm = window.confirm(
+      "Are you sure you want tot delete this property?"
+    );
+    // Check for user deletion confirmtion
+    if (!confirm) return;
+    // IF confirmed call delete function for this property
+    await deleteProperty(propertyId);
+    // Update the properties list state
+    const updatedProperties = properties.filter(
+      (property) => property._id !== propertyId
+    );
+    setPropertiesList(updatedProperties);
+  };
 
   return propertiesList.map((property) => {
     const { _id, name, location, images } = property;
@@ -39,6 +54,7 @@ const ProfileProperties = ({ properties }) => {
           <button
             className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-600"
             type="button"
+            onClick={() => handleDeleteProperty(_id)}
           >
             Delete
           </button>
