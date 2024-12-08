@@ -14,6 +14,7 @@ App description coming
 - Cloudinary
 - React Icons
 - React Spinners
+- React Toastify
 
 #### 💻 Run this project
 

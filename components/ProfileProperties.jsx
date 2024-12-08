@@ -4,6 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import deleteProperty from "@/app/actions/DeleteProperty";
+import { toast } from "react-toastify";
 
 const ProfileProperties = ({ properties }) => {
   const [propertiesList, setPropertiesList] = useState(properties);
@@ -22,6 +23,8 @@ const ProfileProperties = ({ properties }) => {
       (property) => property._id !== propertyId
     );
     setPropertiesList(updatedProperties);
+    // Show Toast conformation
+    toast.success("Property deleted", { autoClose: 3000 });
   };
 
   return propertiesList.map((property) => {
@@ -45,12 +48,12 @@ const ProfileProperties = ({ properties }) => {
           </p>
         </div>
         <div className="mt-2">
-          <a
-            href="/add-property.html"
+          <Link
+            href={`/properties/${_id}/edit`}
             className="bg-blue-500 text-white px-3 py-3 rounded-md mr-2 hover:bg-blue-600"
           >
             Edit
-          </a>
+          </Link>
           <button
             className="bg-red-500 text-white px-3 py-2 rounded-md hover:bg-red-600"
             type="button"
