@@ -48,12 +48,11 @@ const SinglePropertyPage = async ({ params, searchParams }) => {
             <aside className="space-y-4">
               <BookmarkButton property={property} />
               <ShareButtons property={property} />
-              <PropertyContactForm property={property} />
+              {/* <PropertyContactForm property={property} /> */}
             </aside>
           </div>
         </div>
       </section>
-      {/* <PropertyImages images={property.images} /> */}
       <PropertyImages property={property} />
     </>
   );
