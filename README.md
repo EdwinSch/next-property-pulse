@@ -9,6 +9,7 @@ App description coming
 #### 🛠️ Build with
 
 - Next.JS (14)
+- MongoDB & Mongoose
 - Tailwind
 - NextAuth
 - Cloudinary
