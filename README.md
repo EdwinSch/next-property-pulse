@@ -15,6 +15,7 @@ App description coming
 - React Icons
 - React Spinners
 - React Toastify
+- React Share
 
 #### 💻 Run this project
 
