@@ -6,7 +6,7 @@ Showcasing: Responsive application design, User authentication with Google & Nex
 
 ### Live Demo
 
-🚀 [Deployed App](http://)
+🚀 [Deployed App](https://property-pulse-two-nu.vercel.app/)
 
 #### 🛠️ Build with
 
